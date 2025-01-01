@@ -35,8 +35,8 @@ void display(Graph* dothi)
     for(Node* x : dothi->first)
     {
         Node* tmp = x;
-        if(tmp->next != NULL)
-        {
+        if(tmp->next == NULL) continue;
+        else{
             cout << tmp->name << ": ";
             tmp = tmp->next;
         }
