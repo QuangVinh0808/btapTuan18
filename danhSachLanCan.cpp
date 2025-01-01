@@ -35,7 +35,7 @@ void display(Graph* dothi)
     for(Node* x : dothi->first)
     {
         Node* tmp = x;
-        if(tmp->next == NULL) continue;
+        if(tmp->next == NULL) continue; // bỏ qua đỉnh k có lân cận 
         else{
             cout << tmp->name << ": ";
             tmp = tmp->next;
